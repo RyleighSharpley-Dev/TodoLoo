@@ -26,7 +26,7 @@ export default function Todos() {
   const handleLogout = async () => {
     try {
       await logout();
-      router.push("/login");
+      router.push("/");
     } catch (err) {
       console.error(err);
     }

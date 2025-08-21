@@ -51,7 +51,8 @@ export default function Home() {
               TodoLoo helps you manage your tasks easily. Sign up, It&apos;s the best way To Do
             </motion.p>
 
-            {/* Button */}
+            <div className="flex flex-row gap-4  items-center justify-start mt-4">
+{/* Button */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -61,9 +62,28 @@ export default function Home() {
                 href="/sign-up"
                 className="bg-[#7c3aed] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#9b5de5] transition"
               >
-                Get Started
+                Sign Up
               </Link>
+              
             </motion.div>
+            {/* Button */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 3.5 }}
+            >
+              <Link
+                href="/login"
+                className="bg-[#7c3aed] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#9b5de5] transition"
+              >
+                Log In
+              </Link>
+              
+            </motion.div>
+
+            </div>
+            
+            
           </div>
         </div>
       </motion.section>

@@ -46,7 +46,7 @@ export default function Login() {
             Log In
           </h1>
 
-          {error && <p className="text-red-600 text-center mb-4">{error}</p>}
+          {error && <p className="text-yellow-600 text-center mb-4">Username or Password is Incorrect</p>}
 
           <form onSubmit={handleLogin} className="flex flex-col gap-4">
             {/* Email */}

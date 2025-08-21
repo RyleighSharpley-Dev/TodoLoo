@@ -3,14 +3,21 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { auth } from "../firebase/firebase";
 import { logout } from "../helpers/firebaseHelper";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const user = auth.currentUser;
+  const router = useRouter();
 
   const handleLogout = async () => {
-    await logout();
+   try {
+      await logout();
+      router.push("/");
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
