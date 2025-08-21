@@ -48,8 +48,7 @@ export default function Home() {
               transition={{ duration: 1, delay: 3.5 }}
               className="text-lg md:text-xl text-gray-300 mb-8"
             >
-              TodoLoo helps you manage your tasks easily. Sign up, It's the best
-              way To Do
+              TodoLoo helps you manage your tasks easily. Sign up, It&apos;s the best way To Do
             </motion.p>
 
             {/* Button */}
